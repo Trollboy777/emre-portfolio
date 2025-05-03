@@ -1,81 +1,57 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background-color: #f0f2f5;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    padding: 20px;
+    color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    width: 100%;
-    padding: 1em;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+header .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    color: #2c3e50;
 }
 
 main {
-    background: #fff;
-    padding: 2em;
-    margin: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul#project-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul#project-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 900px;
-    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.intro, .projects {
-    margin-bottom: 2em;
+ul#project-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.8em 1.2em;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
-.output-text {
-    margin-top: 1em;
+ul#project-list a {
+    text-decoration: none;
+    color: #2980b9;
     font-weight: bold;
 }
 
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.project-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    width: 250px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.project-card h3 {
-    margin-top: 0;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    position: relative;
-    bottom: 0;
+ul#project-list a:hover {
+    text-decoration: underline;
 }
